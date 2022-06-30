@@ -1,0 +1,171 @@
+.map {
+    height: 60%;
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+    border: none;
+}
+
+.mycard {
+    /*bg-dark color */
+    /* background-color: #212529 !important;  */
+    background-color: #383f45 !important;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    box-shadow: 5px 5px 5px 2px rgb(0 0 0 / 20%);
+    /* transition: 0.3s; */
+    min-height: 80px;
+    /* background-color: #5C6773 !important; */
+}
+.left-section {
+    height: 100vh;
+}
+
+.right-nav {
+    box-shadow: -19px -20px 15px 2px rgb(0 0 0 / 20%);
+    height: 100vh;
+}
+
+.btn-sidenav-toggler {
+    color: white;
+    top: 30px;
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    background-color: #383f45;
+    cursor: pointer;
+    font-size: larger;
+    padding: 5px 15px;
+}
+
+.btn-sidenav-toggler:hover {
+    opacity: 0.8;
+}
+
+.btn-sidenav-hide {
+    position: absolute;
+    left: -12%;
+}
+
+.btn-sidenav-show {
+    position: fixed;
+    right: 30px;
+    opacity: 0.2;
+    display: none;
+}
+
+.esri-ui-manual-container > .esri-component,
+.esri-attribution__sources {
+    display: none;
+}
+
+.filter-wrapper {
+    overflow: hidden;
+    background-color: #212529;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+    padding: 0px 3px;
+    line-height: 1;
+}
+
+.filter-title {
+    text-align: center;
+    padding: 0px 0.5rem;
+    color: #6e6e6e;
+    font-size: x-small;
+}
+
+.filter {
+    width: 100%;
+    margin: auto;
+    /* padding: 0px 5px; */
+}
+
+.filter select {
+    color: white;
+    background: none;
+    border: none;
+    width: inherit;
+    position: relative;
+    padding: 0 0.2rem;
+    margin-bottom: 0.4rem;
+    margin-top: 0.2rem;
+    z-index: 99;
+}
+
+select option {
+    margin: 40px;
+    background-color: #212529;
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.filter:after {
+    /* border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #fff;
+    align-self: center;
+    content: "";
+    z-index: 98;
+    margin-right: 10px; */
+}
+
+.footer {
+    width: 100%;
+    height: 40%;
+    display: flex;
+}
+
+.ft-left {
+    width: 15%;
+    background-color: #383f45;
+    flex: 1 1 auto;
+}
+
+.ft-right {
+    width: 84%;
+    height: max-content;
+    box-shadow: inset 9px 1px 11px 7px rgb(0 0 0 / 20%);
+}
+
+@media screen and (max-width: 510px) {
+}
+
+@media screen and (max-width: 768px) {
+    .map {
+        height: 300px;
+    }
+    .left-section {
+        height: auto;
+        flex: none;
+        /* border: 2px solid green; */
+    }
+    .footer {
+        /* border: 2px solid red; */
+        flex: none;
+        display: block;
+        height: auto;
+        /* min-height: 1000px; */
+    }
+    .ft-left {
+        width: 100%;
+        flex: none;
+        margin-top: 10px;
+    }
+    .ft-right {
+        /* border: 1px solid gray; */
+        width: 100%;
+        margin-top: 10px;
+    }
+    .right-nav {
+        margin-top: 10px;
+        height: auto;
+        width: 100%;
+        /* border: 2px solid blue; */
+    }
+    .btn-sidenav-toggler {
+        display: none;
+    }
+    .filter-wrapper {
+        margin: auto;
+        width: 80%;
+    }
+}
